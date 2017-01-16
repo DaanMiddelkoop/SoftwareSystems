@@ -14,10 +14,16 @@ import javax.swing.JPanel;
  * @version 2005.02.22
  */
 public class BallPanel extends JPanel implements ActionListener, Runnable {
+	class AnimateThread extends Thread {
+		public void run() {
+			animate();
+		}
+	}
 	private List<Ball> balls; // @invariant balls != null
 
 	public BallPanel() {
 		balls = new java.util.ArrayList<Ball>();
+		new AnimateThread().start();
 	}
 
 	/**

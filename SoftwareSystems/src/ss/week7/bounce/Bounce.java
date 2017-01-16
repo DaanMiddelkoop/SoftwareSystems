@@ -24,8 +24,6 @@ public class Bounce extends JFrame {
 		start = new JButton("Start");
 		controlPanel.add(start);
 
-		new Thread(ballPanel).start();
-
 		start.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent evt) {
 				ballPanel.addNewBall();

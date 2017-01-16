@@ -2,7 +2,7 @@ package ss.week6.voteMachine;
 
 import java.util.*;
 
-public class VoteTUIView implements Observer, VoteView {
+public class VoteTUIView implements VoteView {
 
 	public VoteMachine control;
 	
