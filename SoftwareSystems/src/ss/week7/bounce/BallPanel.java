@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.ListIterator;
 
 import javax.swing.JPanel;
+import javax.swing.Timer;
 
 /**
  * BallPanel a special JPanel for drawing balls on.
@@ -23,7 +24,9 @@ public class BallPanel extends JPanel implements ActionListener, Runnable {
 
 	public BallPanel() {
 		balls = new java.util.ArrayList<Ball>();
-		new AnimateThread().start();
+		//new AnimateThread().start();
+		
+		new Timer(20, this).start();;
 	}
 
 	/**
