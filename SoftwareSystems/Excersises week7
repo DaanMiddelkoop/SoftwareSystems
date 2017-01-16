@@ -1,0 +1,5 @@
+7.2 The drawing of the mandelsets is completely done on other threads, so the gui thread can do whatever it wants in the meantime.
+
+7.3 The drawing of mandelsets is not moved to another thread anymore and is thus blocking the gui to do what it wants.
+
+7.4 
