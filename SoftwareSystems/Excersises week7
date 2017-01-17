@@ -2,4 +2,6 @@
 
 7.3 The drawing of mandelsets is not moved to another thread anymore and is thus blocking the gui to do what it wants.
 
-7.4 
+7.9 All the texts get mixed and the answers as well.
+
+7.11 Some parts still get mixed up.
