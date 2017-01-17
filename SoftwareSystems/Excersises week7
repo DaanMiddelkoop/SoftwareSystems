@@ -5,3 +5,6 @@
 7.9 All the texts get mixed and the answers as well.
 
 7.11 Some parts still get mixed up.
+
+7.16 the producers dont check if the buffer is already read by a consumer and therefore overwrites the value before the buffer has read it.
+Also the consumer doesnt check if the buffer is already read, and could read the same number more than once.
